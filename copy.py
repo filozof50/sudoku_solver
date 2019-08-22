@@ -10,4 +10,4 @@ for subdir, dirs, files in os.walk(rootdir):
         for i in range(1000):
             if file[-3:] == "png":
                 name = str(time.time()) + "_" + file[:-4] + ".png"
-                shutil.copy(os.path.join(final, file), name)
+shutil.copy(os.path.join(final, file), name)
